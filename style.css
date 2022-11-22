@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+:root {
+	--rojo: #dc0808;
+	--granate: #401515;
+	--degradado: linear-gradient(90deg, var(--granate), var(--rojo));
+}
+* {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+::selection {
+	/* background: var(--orange); */
+	color: white;
+}
+html {
+	font-size: 64.4%;
+}
+body {
+	background: #f9f9f9;
+	overflow: scroll;
+}
+section{
+	min-width: 100vh;
+	padding: 0 6%;
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+}
+
+h3{
+	font-size: 6rem;
+	text-align: center;
+
+}
+p{
+	opacity: none;
+	font-size: 2rem;
+}
+header {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	padding: 2rem 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+header .logo {
+	font-size: 2rem;
+	color: var(--granate);
+}
+header .logo span {
+	color: var(--rojo);
+}
+header .navbar a {
+	font-size: 1.8rem;
+	margin-left: 2rem;
+	color: var(--granate);
+}
+header .navbar a:hover {
+	color: var(--rojo);
+}
+header input {
+	display: none;
+}
+header label {
+	font-size: 3rem;
+	color: var(--rojo);
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+}
+.presentacion-box{
+	background-size: cover;
+}
+.contenedor{
+	align-items: center;
+	height: 800px;
+	overflow-y: scroll;
+	background: url(img/galaxy1.png);
+	opacity: 95%;
+	background-size: cover;
+	
+}
+.centrado{
+	text-align: center;
+	font-size: 1.7rem;
+	margin:15rem;
+	opacity: 100;
+	color: #4fb76b;
+}
+.contenido-box{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+.contain-universo{
+	border-radius: 1rem;
+	display: absolute;
+	margin-top: 6rem;
+	margin-left: 6rem;
+	width: 250px;
+	height: 250px;
+	background: url(img/universo.png);
+}
+.p-universo, .p-criaturas, .p-leyendas, .p-lore, .p-armas-jerarquia{
+margin-left: 26rem;
+width: 300px;
+
+}
+.criaturas{
+	border-radius: 1rem;
+	margin-top: 6rem;
+	margin-left: 6rem;
+	background: url(img/criaturas.png);
+	width: 219px;
+	height: 232px;
+}
+.lore{
+	border-radius: 1rem;
+	margin-top: 6rem;
+	margin-left: 6rem;
+	background: url(img/lore.png);
+	width: 250px;
+	height: 250px;
+}
+.leyendas{
+	border-radius: 1rem;
+	margin-top: 6rem;
+	margin-left: 6rem;
+	background: url(img/leyendas.png);
+	width: 250px;
+	height: 250px;
+}
+.armas-jerarquia{
+	border-radius: 1rem;
+	margin-top: 6rem;
+	margin-left: 6rem;
+	background: url(img/arma.jpg);
+	width: 250px;
+	height: 250px;
+}
+@media (max-width: 1200px) {
+	html {
+		font-size: 66%;
+	}
+}
+@media (max-width: 768px) {
+	header label {
+		visibility: visible;
+		opacity: 1;
+	}
+	header .navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background: white;
+		padding: 1rem 2rem;
+		border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+		transform-origin: top;
+		transform: scaleY(0);
+		opacity: 0;
+	}
+	header .navbar a {
+		display: block;
+		margin: 2rem 0;
+		font-size: 2rem;
+	}
+	header input:checked ~ .navbar {
+		transform: scaley(1);
+		opacity: 1;
+	}
+	header input:checked ~ label::before {
+		content: "\f00d";
+	}
+}
+@media (max-width: 450px) {
+	html {
+		font-size: 49%;
+	}
+}
+
+ /* #contenedor-imagen img {
+	border: 5px solid #eee;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+}  */ /*rotar imagen /* 
