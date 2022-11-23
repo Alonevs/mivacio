@@ -24,19 +24,18 @@ body {
 	background: #f9f9f9;
 	overflow: scroll;
 }
-section{
+section {
 	min-width: 100vh;
 	padding: 0 6%;
 	padding-top: 1.5rem;
 	padding-bottom: 2rem;
 }
 
-h3{
+h3 {
 	font-size: 6rem;
 	text-align: center;
-
 }
-p{
+p {
 	opacity: none;
 	font-size: 2rem;
 }
@@ -79,36 +78,38 @@ header label {
 	visibility: hidden;
 	opacity: 0;
 }
-.presentacion-box{
+.presentacion-box {
 	background-size: cover;
 }
-.contenedor{
+.contenedor {
 	align-items: center;
 	height: 800px;
 	overflow-y: scroll;
 	background: url(img/galaxy1.png);
 	opacity: 95%;
 	background-size: cover;
-	
 }
-.centrado{
+.centrado {
 	text-align: center;
 	font-size: 1.7rem;
-	margin:15rem;
+	margin: 15rem;
 	opacity: 100;
 	color: #4fb76b;
 }
-.contenido-box{
+.contenido-box {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
-
 }
-.p-universo, .p-criaturas, .p-leyendas, .p-lore, .p-armas-jerarquia{
+.p-universo,
+.p-criaturas,
+.p-leyendas,
+.p-lore,
+.p-armas-jerarquia {
 	margin-left: 26rem;
 	width: 300px;
-	}
-.contain-universo{
+}
+.contain-universo {
 	border-radius: 1rem;
 	display: absolute;
 	margin-top: 6rem;
@@ -119,7 +120,7 @@ header label {
 	margin-right: 27rem;
 }
 
-.criaturas{
+.criaturas {
 	border-radius: 1rem;
 	margin-top: 6rem;
 	margin-left: 9rem;
@@ -128,7 +129,7 @@ header label {
 	height: 232px;
 	margin-right: 27rem;
 }
-.lore{
+.lore {
 	border-radius: 1rem;
 	margin-top: 6rem;
 	margin-left: 9rem;
@@ -137,7 +138,7 @@ header label {
 	height: 250px;
 	margin-right: 27rem;
 }
-.leyendas{
+.leyendas {
 	border-radius: 1rem;
 	margin-top: 6rem;
 	margin-left: 9rem;
@@ -146,7 +147,7 @@ header label {
 	height: 250px;
 	margin-right: 27rem;
 }
-.armas-jerarquia{
+.armas-jerarquia {
 	border-radius: 1rem;
 	margin-top: 6rem;
 	margin-left: 9rem;
@@ -204,12 +205,11 @@ header label {
 	grid-template-columns: repeat(12, 1fr);
 	margin-bottom: 20px;
 	margin-top: 20px;
-  }
-	}
-	
- /* #contenedor-imagen img {
+}
+
+#contenedor-imagen img {
 	border: 5px solid #eee;
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
-}  */ /*rotar imagen /* 
+}
