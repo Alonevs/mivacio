@@ -101,53 +101,59 @@ header label {
 .contenido-box{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
 
 }
+.p-universo, .p-criaturas, .p-leyendas, .p-lore, .p-armas-jerarquia{
+	margin-left: 26rem;
+	width: 300px;
+	}
 .contain-universo{
 	border-radius: 1rem;
 	display: absolute;
 	margin-top: 6rem;
-	margin-left: 6rem;
+	margin-left: 9rem;
 	width: 250px;
 	height: 250px;
 	background: url(img/universo.png);
+	margin-right: 27rem;
 }
-.p-universo, .p-criaturas, .p-leyendas, .p-lore, .p-armas-jerarquia{
-margin-left: 26rem;
-width: 300px;
 
-}
 .criaturas{
 	border-radius: 1rem;
 	margin-top: 6rem;
-	margin-left: 6rem;
+	margin-left: 9rem;
 	background: url(img/criaturas.png);
 	width: 219px;
 	height: 232px;
+	margin-right: 27rem;
 }
 .lore{
 	border-radius: 1rem;
 	margin-top: 6rem;
-	margin-left: 6rem;
+	margin-left: 9rem;
 	background: url(img/lore.png);
 	width: 250px;
 	height: 250px;
+	margin-right: 27rem;
 }
 .leyendas{
 	border-radius: 1rem;
 	margin-top: 6rem;
-	margin-left: 6rem;
+	margin-left: 9rem;
 	background: url(img/leyendas.png);
 	width: 250px;
 	height: 250px;
+	margin-right: 27rem;
 }
 .armas-jerarquia{
 	border-radius: 1rem;
 	margin-top: 6rem;
-	margin-left: 6rem;
+	margin-left: 9rem;
 	background: url(img/arma.jpg);
 	width: 250px;
 	height: 250px;
+	margin-right: 27rem;
 }
 @media (max-width: 1200px) {
 	html {
@@ -191,6 +197,16 @@ width: 300px;
 	}
 }
 
+.pagination {
+	grid-column: 3 / span 8;
+	justify-self: center;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	margin-bottom: 20px;
+	margin-top: 20px;
+  }
+	}
+	
  /* #contenedor-imagen img {
 	border: 5px solid #eee;
 	-webkit-transition: all 0.5s ease-out;
